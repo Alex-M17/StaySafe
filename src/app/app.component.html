@@ -1,3 +1,65 @@
-<h1>Comenzando</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand pb-2" style="font-size:x-large;" href="/">StaySafe &#10003;</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Noticias
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/Nacionales">Nacionales</a>
+          <a class="dropdown-item" routerLink="/Internacionales">Internacionales</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/medidas">Medidas a tomar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="sobreNosotros">Sobre nosotros</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
+<a (click)="Top()" style="cursor: pointer !important;"><i class="fa fa-arrow-up bg-dark text-light p-3 mb-5 mr-4 rounded-circle border border-light" style="position: fixed; bottom: 0; right: 0; font-size: x-large; z-index: 1;"></i></a>
+<router-outlet></router-outlet>
+
+<footer class="bg-dark w-100 mt-5 sticky-bottom pt-5 text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase">Stay Safe</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni officiis sit blanditiis delectus sequi! Amet vel itaque velit ipsum, consectetur modi repellendus ratione? Cum dicta voluptatum incidunt pariatur assumenda iusto!.</p>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 ml-5 mb-3">
+        <!-- Links -->
+        <h5 class="text-uppercase">Noticias recientes</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="Nacionales">Noticias Nacionales</a>
+          </li>
+          <li>
+            <a href="Internacionales">Noticias Internacionales</a>
+          </li>
+          <li>
+            <hr style="height: 3px; background: linear-gradient(to right, white,#ffffff00) ; border-radius: 10px;">
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="footer-copyright w-75 text-center pl-2 pb-3"><span style="color: #cad2d8;">&#10003; Conocenos:</span> 
+    <a href="sobreNosotros" class="text-light ml-2"><b>Sobre Nosotros</b></a>
+  </div>
+</footer>

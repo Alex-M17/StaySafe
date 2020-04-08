@@ -1,0 +1,13 @@
+.container #noti ul li:hover{
+    background: #ccc;
+    cursor: pointer;
+}
+
+.map{
+    
+}
+
+.map path:hover{
+    fill: #ccc;
+    cursor: pointer;
+}

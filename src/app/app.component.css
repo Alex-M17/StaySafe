@@ -1,0 +1,22 @@
+footer a{
+    color: #cad2d8;
+}
+
+footer{
+    position: relative;
+}
+
+@media (min-width: 768px){
+    footer::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 0; 
+        height: 0; 
+        border-left: 400px solid transparent;
+        border-bottom: 270px solid #aab3b9 /*#343a40*/;
+        bottom: 0;
+    }
+}
+
+
